@@ -25,12 +25,15 @@ dependencyResolutionManagement {
 #### app/build.gradle
 ```gradle
 dependencies {
-    implementation 'com.github.zubinraja.ThAndroidLame:androidlame:<version>'
+    implementation 'com.github.zubinraja:ThAndroidLame:2.0.1'
 }
 ```
-Replace `<version>` with a release tag (see the badge above), a commit hash, or `master-SNAPSHOT`
+Replace `2.0.1` with a release tag (see the badge above), a commit hash, or `master-SNAPSHOT`
 to track the latest commit. No extra plugin is required on the consuming side — the old
 `com.github.dcendents.android-maven` plugin instructions are obsolete and no longer needed.
+
+Verified working: this exact coordinate is live on JitPack (build status `ok`) and the resulting
+AAR was checked to contain 16&nbsp;KB page-size aligned native libraries for all four ABIs.
 
 # Usage
 
